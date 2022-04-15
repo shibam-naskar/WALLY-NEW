@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "gtts": "^0.2.1",
+    "puppeteer": "^13.5.2",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.16.5",
+    "wikipedia": "^1.1.8",
+    "ytsr": "^3.7.0"
+  }
+}
