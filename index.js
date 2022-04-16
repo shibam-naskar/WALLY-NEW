@@ -2,6 +2,7 @@ const qrcode = require('qrcode-terminal');
 const ytsr = require('ytsr');
 const gTTS = require('gtts');
 const axios = require('axios').default;
+const puppeteer = require('puppeteer')
 
 var chatmoodenabled = []
 
@@ -12,9 +13,8 @@ var chatmoodenabled = []
 
 const { Client, ChatTypes, MessageMedia } = require('whatsapp-web.js');
 
+const client = new Client({ puppeteer: { args: ['--no-sandbox'] } });
 
-
-const client = new Client();
 
 client.on('qr', qr => {
     qrcode.generate(qr, {small: true});
